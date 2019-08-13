@@ -1,0 +1,33 @@
+{
+  "name": "vidly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dashboard-install": "npm install --prefix dashboard",
+    "client-install": "npm install --prefix client",
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "dashboard": "npm start --prefix dashboard",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run dashboard\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "config": "^1.29.4",
+    "express": "^4.16.2",
+    "fawn": "^2.1.5",
+    "joi": "^13.1.0",
+    "joi-objectid": "^2.0.0",
+    "jsonwebtoken": "^8.1.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.6.9",
+    "concurrently": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
